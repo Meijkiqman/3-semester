@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef CHARNODE_II
 #define CHARNODE_II
 
@@ -7,7 +7,7 @@
 class CharNode
 	{
 	public:
-		CharNode(char sign, CharNode* next = nullptr);
+		CharNode(char, CharNode* next = nullptr);
 		CharNode* getNext();
 		static int getAmount();
 		char getData();

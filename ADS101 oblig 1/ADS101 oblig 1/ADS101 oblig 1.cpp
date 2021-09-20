@@ -5,31 +5,20 @@
 
 int main()
 {
+    Stack* stack = new Stack();
 
-    //Stack* list = new Stack;
-    CharNode* list = new CharNode('a');
+    CharNode* list = new CharNode('a', nullptr);
     list = new CharNode('b', list);
     list = new CharNode('c', list);
     list = new CharNode('d', list);
 
-    //list->Push(ch);
-
-    for (CharNode* p = list; p != nullptr; p = p->getNext())
-        std::cout << p->getData();
-
-    std::cout << std::endl << "length of list: " << list->getAmount() << std::endl;
-
-
-
-
-   /*while (list->Top() != nullptr)
-    {
-        list->Top()->print();
-        list->Pop();
-        std::cout << "static amount: " << list->Size()
-    }*/
-
-
-
     
+    //stack->Push(list);
+
+    while (stack->Size() != 0)
+    {
+        std::cout << stack->Top()->getData();
+        stack->Pop();
+    }
+       
 }

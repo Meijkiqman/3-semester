@@ -6,6 +6,11 @@ Stack::Stack()
 
 }
 
+void Stack::Push(CharNode* name)
+{
+	data = name;
+}
+
 void Stack::Pop()
 {
 	CharNode* out = data;

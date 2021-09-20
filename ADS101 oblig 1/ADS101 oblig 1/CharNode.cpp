@@ -33,4 +33,3 @@ void CharNode::print()
 {
 	std::cout << m_sign << ", ";
 }
-	

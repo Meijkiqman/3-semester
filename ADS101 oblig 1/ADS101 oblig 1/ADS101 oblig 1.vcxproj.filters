@@ -18,10 +18,10 @@
     <ClCompile Include="ADS101 oblig 1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CharNode.cpp">
+    <ClCompile Include="Stack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Stack.cpp">
+    <ClCompile Include="CharNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
