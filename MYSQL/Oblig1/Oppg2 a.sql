@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS Customers (
     ) Engine=InnoDB;
     
     INSERT INTO Customers Values
-    ('Mo','Kari', 'GateVeien 5', 1312),
-    ('Morgan', 'Arthur', 'VeiGata 13', 1153),
-    ('Castro','Fidel', 'CubaParken', 1953);
+    (1,'Mo','Kari', 'GateVeien 5', 1312),
+    (2,'Morgan', 'Arthur', 'VeiGata 13', 1153),
+    (3,'Castro','Fidel', 'CubaParken', 1953);
