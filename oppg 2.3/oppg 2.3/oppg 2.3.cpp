@@ -14,8 +14,8 @@ std::vector<long double> sortTime;
 //uses template to push multiple values into the selection sort. 
 //write til file for easier conversion to geogebra
 
-template<size_t N>
-void Selection_sort(std::array<int, N>& a, std::ofstream &write2File)
+template<typename T,size_t N>
+void Selection_sort(T (&a)[N], std::ofstream &write2File)
 {
     for (int i = 0; i < N; i++)
     {
@@ -50,8 +50,8 @@ void Selection_sort(std::array<int, N>& a, std::ofstream &write2File)
 
 }
 
-template<size_t N>
-void stdSort(std::array<int, N>& a, std::ofstream& write2File)
+template<typename T, size_t N>
+void stdSort(T(&a)[N], std::ofstream& write2File)
 {
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -77,14 +77,14 @@ int main()
     
     // used to write time and array size to txt file
  
-    std::ofstream selection_sortFile("Selsction_sort results.txt");
-    std::ofstream stdsortFile("std::sort results.txt");
+    std::ofstream selection_sortFile("Selection_sort results.txt");
+    std::ofstream stdsortFile("stdsort results.txt");
 
     int a[10];
     int b[100];
     int c[1000];
     int d[10000];
-    int e[100000];
+    int e[20000];
 
    //for loop size of 10 for mean for selection sort
     for (int i = 0; i < 10; i++)
@@ -110,6 +110,7 @@ int main()
     selection_sortFile.close();
     stdsortFile.close();
 
+    std::cout << std::endl << "sorting finished" << std::endl;
     return 0;
 }
 
