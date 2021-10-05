@@ -8,6 +8,7 @@
 #include <vector>
 #include <string>
 
+
 std::vector<long double> selection_sortTime;
 std::vector<long double> sortTime;
 
@@ -43,7 +44,7 @@ void Selection_sort(T (&a)[N], std::ofstream &write2File)
     varighet += varighet_nano;
 
     int time = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start).count();
-    std::cout << "an array with: " << N << " elements, used a total time of: " << varighet.count() << " nanoseconds to sort the array with selection" << std::endl;
+    std::cout << "an array with: " << N << " elements, used a total time of: " << varighet.count() << " nanoseconds to sort the array with selection" << std::endl << std::endl;
 
     write2File << varighet.count() << std::endl;
     selection_sortTime.push_back(varighet.count());
@@ -64,7 +65,7 @@ void stdSort(T(&a)[N], std::ofstream& write2File)
     varighet += varighet_nano;
 
     int time = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start).count();
-    std::cout << "an array with: " << N << " elements, used a total time of: " << varighet.count() << " nanoseconds to sort the array with std::sort" << std::endl;
+    std::cout << "an array with: " << N << " elements, used a total time of: " << varighet.count() << " nanoseconds to sort the array with std::sort" << std::endl << std::endl;
 
     write2File << varighet.count() << std::endl;
     sortTime.push_back(varighet.count());
