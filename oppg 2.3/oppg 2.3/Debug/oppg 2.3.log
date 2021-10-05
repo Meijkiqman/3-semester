@@ -1,20 +1,20 @@
 ﻿  oppg 2.3.cpp
-C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(45,14): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(46,14): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(92): message : see reference to function template instantiation 'void Selection_sort<int,10>(T (&)[10],std::ofstream &)' being compiled
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(93): message : see reference to function template instantiation 'void Selection_sort<int,10>(T (&)[10],std::ofstream &)' being compiled
           with
           [
               T=int
           ]
-C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(66,14): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(67,14): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(102): message : see reference to function template instantiation 'void stdSort<int,10>(T (&)[10],std::ofstream &)' being compiled
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\oppg 2.3\oppg 2.3\oppg 2.3.cpp(103): message : see reference to function template instantiation 'void stdSort<int,10>(T (&)[10],std::ofstream &)' being compiled
           with
           [
               T=int
