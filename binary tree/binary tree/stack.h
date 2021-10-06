@@ -1,47 +1,54 @@
 #pragma once
 
-
+template<class T>
 class Stack
 {
 public:
 	Stack();
-	void Top();
-	void Push(int node);
+	T Top();
+	void Push(T node);
 	void Pop();
 	int Size();
 	bool Empty();
 private:
-	int data[10];
+	T data[10];
 	int index;
 };
 
-Stack::Stack()
+template<class T>
+Stack<T>::Stack()
 {
 	index = 0;
 }
 
-void Stack::Pop()
+template<class T>
+void Stack<T>::Pop()
 {
 	index--;
 }
 
-void Stack::Push(int node)
+template<class T>
+void Stack<T>::Push(T node)
 {
 	data[index] = node;
 	index++;
 }
 
-int Stack::Size()
+
+template<class T>
+T Stack<T>::Top()
 {
 	return data[index - 1];
 }
 
-int Stack::Size()
+template<class T>
+int Stack<T>::Size()
 {
 	return index;
 }
 
-bool Stack::Empty()
+template<class T>
+bool Stack<T>::Empty()
 {
 	if (index == 0)
 	{

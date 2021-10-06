@@ -3,34 +3,42 @@
 
 BinaryNode::BinaryNode()
 {
-
+	
 }
 
-BinaryNode::BinaryNode(char data, BinaryNode* left, BinaryNode* right)
+BinaryNode::BinaryNode(int data, BinaryNode* left, BinaryNode* right)
 	: m_data{ data }, m_left{ left }, m_right{ right }
 {
 
 }
-char BinaryNode::getData()
+int BinaryNode::getData()
 {
 	return m_data;
 }
 
-BinaryNode* BinaryNode::find(char data)
+BinaryNode* BinaryNode::find(int data)
 {
 	//std::cout << m_data;
 
 	if (m_data == data)
 		return this;
+
+	//If _data is smaller then data then the left node is != nullptr that means its not empty, then finds left data
+
 	else if (data < m_data && m_left != nullptr)
 		return m_left->find(data);
-	else if (m_right) //m_data<=data
+
+	//if_data is maller than data, then return right data
+	else if (m_right) 
+
 		return m_right->find(data);
+
 		//if node doesnt exist then this:
+
 	return nullptr;
 }
 
-void BinaryNode::insert(char data)
+void BinaryNode::insert(int data)
 {
 	if (data < m_data)
 	{

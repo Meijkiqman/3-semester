@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="binary tree.cpp" />
     <ClCompile Include="BinaryNode.cpp" />
+    <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryNode.h" />
