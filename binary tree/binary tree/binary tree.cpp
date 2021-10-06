@@ -7,6 +7,9 @@
 
 void InOrder(BinaryNode* root);
 void postOrder(BinaryNode* root);
+int NumberofNodes(BinaryNode* root);
+int NumberofLevels(BinaryNode* root);
+bool Balance(BinaryNode* root);
 
 int main(int argc, int *argv[])
 {
@@ -28,6 +31,11 @@ int main(int argc, int *argv[])
     
     postOrder(bntree);
 
+    std::cout << std::endl << "amount of nodes in BNtree: " <<  NumberofNodes(bntree) << std::endl;
+
+    std::cout << std::endl << "amount of nodes in BNtree: " << NumberofLevels(bntree) << std::endl;
+
+   
 }
 
 void InOrder(BinaryNode* root)
@@ -99,8 +107,110 @@ void postOrder(BinaryNode* root)
         }
         
     }
+}
+//returns the amount of nodes in a tree.
+int NumberofNodes(BinaryNode* root)
+{
+    Stack<BinaryNode*> stack;
+    stack.Push(root);
 
+    int nodes = 0;
 
-    
+    while (!stack.Empty())
+    {
+        BinaryNode* curr = stack.Top();
+        stack.Pop();
+
+        nodes++;
+
+        if (curr->getLeft())
+        {
+            stack.Push(curr->getLeft());
+        }
+        if (curr->getRight())
+        {
+            stack.Push(curr->getRight());
+        }
+
+    }
+    return nodes;
 }
 
+int NumberofLevels(BinaryNode* root)
+{
+    Stack<BinaryNode*> stack;
+    stack.Push(root);
+
+    int levels = 0;
+    
+    while (!stack.Empty())
+    {
+        BinaryNode* curr = stack.Top();
+        stack.Pop();
+        bool visited = false;
+
+        //only add to levels if it hasnt visted the level:
+        if (curr->getLeft())
+        {
+            stack.Push(curr->getLeft());
+            levels++;
+            visited = true;
+        }
+        if (curr->getRight())
+        {
+            stack.Push(curr->getRight());
+            if(visited == false)
+            levels++;
+            visited = true;
+        }
+    }
+    return levels;
+}
+
+
+bool Balance(BinaryNode* root)
+{
+    if (root == false)
+    {
+        return true;
+    }
+
+    //check how many levels there are, both left and right
+    int leftHeight = Height(root->getLeft());
+    int rightHeight = Height(root->getRight());
+
+    //if the tree is not balanced then return false
+    if ((leftHeight - rightHeight) <= 0 && Balance(root->getLeft()) && Balance(root->getRight()))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}
+
+//height function to put into balance function.
+int Height(BinaryNode* root)
+{
+    if (root == false)
+    {
+        return 0;
+    }
+    else
+    {
+        int L = Height(root->getLeft());
+        int R = Height(root->getRight());
+
+        //returns the highest 
+        if (L > R)
+        {
+            return 1 + L;
+        }
+        else
+        {
+            return 1 + R;
+        }
+    }
+}
