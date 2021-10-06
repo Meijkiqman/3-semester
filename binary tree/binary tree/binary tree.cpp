@@ -11,6 +11,8 @@ int NumberofNodes(BinaryNode* root);
 int NumberofLevels(BinaryNode* root);
 bool Balance(BinaryNode* root);
 
+
+//test funksjon
 int main(int argc, int *argv[])
 {
     BinaryNode* right = new BinaryNode(1);

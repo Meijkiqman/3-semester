@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="binary tree.cpp" />
     <ClCompile Include="BinaryNode.cpp" />
+    <ClCompile Include="QuadTree.cpp" />
     <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryNode.h" />
+    <ClInclude Include="quadTree.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
