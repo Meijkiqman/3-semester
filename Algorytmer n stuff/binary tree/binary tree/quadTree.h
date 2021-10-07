@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 #include <vector>
 
 
@@ -29,19 +28,20 @@ struct Vector2d
 	{
 	public:
 		QuadTree();
+		QuadTree* findAllLeafs();
 		QuadTree(const Vector2d& v1, const Vector2d& v2, const Vector2d& v3, const Vector2d& v4);
 		void subDivide(int n);
-		//void print() const;
+		std::vector<Vector2d*> data;
+		bool isLeaf() const;
 		QuadTree* find(const Vector2d& p);
-	private:
-		Vector2d m_a;
-		Vector2d m_b;
-		Vector2d m_c;
-		Vector2d m_d;
+		Vector2d v_sw;
+		Vector2d v_se;
+		Vector2d v_nw;
+		Vector2d v_ne;
 		QuadTree* m_sw;
 		QuadTree* m_se;
 		QuadTree* m_nw;
 		QuadTree* m_ne;
-		bool isLeaft() const;
+	
 
 	};

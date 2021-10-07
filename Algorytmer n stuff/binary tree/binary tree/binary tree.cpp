@@ -1,7 +1,7 @@
 #include "BinaryNode.h"
 #include <iostream>
 #include "stack.h"
-
+#include "QuadTree.h"
 
 
 
@@ -11,6 +11,7 @@ int NumberofNodes(BinaryNode* root);
 int NumberofLevels(BinaryNode* root);
 bool Balance(BinaryNode* root);
 int Height(BinaryNode* root);
+QuadTree* BuildQuadtree();
 
 
 //test funksjon
@@ -36,9 +37,21 @@ int main(int argc, int *argv[])
 
     std::cout << std::endl << "amount of nodes in BNtree: " <<  NumberofNodes(bntree) << std::endl;
 
-    std::cout << std::endl << "amount of nodes in BNtree: " << NumberofLevels(bntree) << std::endl;
+    std::cout << std::endl << "amount of levels in BNtree: " << NumberofLevels(bntree) << std::endl;
 
-   
+    if (Balance)
+    {
+        std::cout << std::endl << "the tree is balanced "<< std::endl;
+    }
+    
+
+    QuadTree* qTree = BuildQuadtree();
+    qTree->findAllLeafs();
+    //qTree->subDivide(1);
+    //qTree->m_ne->subDivide(1);
+    QuadTree* isLeaf();
+
+    
 }
 
 void InOrder(BinaryNode* root)
@@ -216,4 +229,15 @@ int Height(BinaryNode* root)
             return 1 + R;
         }
     }
+}
+
+QuadTree* BuildQuadtree()
+{
+    // create points
+    Vector2d ne{ 100, 100 };
+    Vector2d nw{ 0, 100 };
+    Vector2d se{ 100, 0 };
+    Vector2d sw{ 0, -0 };
+    QuadTree* root = new QuadTree(ne, nw, se, sw);
+    return root;
 }
