@@ -10,6 +10,7 @@ void postOrder(BinaryNode* root);
 int NumberofNodes(BinaryNode* root);
 int NumberofLevels(BinaryNode* root);
 bool Balance(BinaryNode* root);
+int Height(BinaryNode* root);
 
 
 //test funksjon
@@ -172,7 +173,7 @@ int NumberofLevels(BinaryNode* root)
 
 bool Balance(BinaryNode* root)
 {
-    if (root == false)
+    if (!root)
     {
         return true;
     }
@@ -196,7 +197,7 @@ bool Balance(BinaryNode* root)
 //height function to put into balance function.
 int Height(BinaryNode* root)
 {
-    if (root == false)
+    if (!root)
     {
         return 0;
     }

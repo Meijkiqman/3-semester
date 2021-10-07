@@ -38,7 +38,7 @@ BinaryNode* BinaryNode::find(int data)
 	return nullptr;
 }
 
-void BinaryNode::insert(int data)
+/*void BinaryNode::insert(int data)
 {
 	if (data < m_data)
 	{
@@ -54,7 +54,7 @@ void BinaryNode::insert(int data)
 		else m_right = new BinaryNode(data);
 	}
 
-}
+}*/
 
 void BinaryNode::intrav()
 {

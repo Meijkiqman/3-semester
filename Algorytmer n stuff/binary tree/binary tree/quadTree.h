@@ -24,15 +24,6 @@ struct Vector2d
 	
 
 };
-struct GameObject
-	{
-		Vector2d m_position;
-		std::string m_name;
-		GameObject() {};
-		GameObject(const Vector2d& position, std::string name)
-			: m_position{ position }, m_name{ name } { };
-
-	};
 
 	class QuadTree
 	{
@@ -40,8 +31,7 @@ struct GameObject
 		QuadTree();
 		QuadTree(const Vector2d& v1, const Vector2d& v2, const Vector2d& v3, const Vector2d& v4);
 		void subDivide(int n);
-		void print() const;
-		QuadTree* insert(const GameObject& gameObject);
+		//void print() const;
 		QuadTree* find(const Vector2d& p);
 	private:
 		Vector2d m_a;
@@ -52,7 +42,6 @@ struct GameObject
 		QuadTree* m_se;
 		QuadTree* m_nw;
 		QuadTree* m_ne;
-		std::vector<GameObject> m_gameObjects;
 		bool isLeaft() const;
 
 	};

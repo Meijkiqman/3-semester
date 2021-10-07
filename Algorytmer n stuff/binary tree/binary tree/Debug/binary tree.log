@@ -1,2 +1,3 @@
-﻿  binary tree.cpp
-  binary tree.vcxproj -> C:\Users\siver\Documents\GitHub\3. Semester\3-semester\binary tree\Debug\binary tree.exe
+﻿  BinaryNode.cpp
+QuadTree.obj : error LNK2019: unresolved external symbol "private: bool __thiscall QuadTree::isLeaft(void)const " (?isLeaft@QuadTree@@ABE_NXZ) referenced in function "public: class QuadTree * __thiscall QuadTree::find(struct Vector2d const &)" (?find@QuadTree@@QAEPAV1@ABUVector2d@@@Z)
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\binary tree\Debug\binary tree.exe : fatal error LNK1120: 1 unresolved externals
