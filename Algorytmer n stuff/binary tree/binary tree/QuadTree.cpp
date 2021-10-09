@@ -3,35 +3,7 @@
 
 
 
-QuadTree* QuadTree::find(const Vector2d& p)
-{
-	if (isLeaf())
-	{
-		return this;
-	}
-	else
-	{
-		Vector2d m = (v_sw + v_ne) / 2;
-		if (p.y < m.y)
-		{
-			if (p.x < m.x)
-				m_sw->find(p);
-			else
-				m_se->find(p);
-		}
-		else
-		{
-			if (p.x < m.x)
-			{
-				m_nw->find(p);
-			}
-			else
-			{
-				m_ne->find(p);
-			}
-		}
-	}
-}
+
 
 QuadTree::QuadTree(const Vector2d &v1, const Vector2d &v2, const Vector2d &v3, const Vector2d &v4)
 	:v_sw{v1}, v_se{v2}, v_ne{v3}, v_nw{v4},
@@ -40,7 +12,7 @@ QuadTree::QuadTree(const Vector2d &v1, const Vector2d &v2, const Vector2d &v3, c
 
 }
 
-/*void QuadTree::subDivide(int n)
+void QuadTree::subDivide(int n)
 {
 	if (n > 0)
 	{
@@ -63,7 +35,7 @@ QuadTree::QuadTree(const Vector2d &v1, const Vector2d &v2, const Vector2d &v3, c
 		m_nw->subDivide(n - 1);
 
 	}
-}*/
+}
 
 
 bool QuadTree::isLeaf() const

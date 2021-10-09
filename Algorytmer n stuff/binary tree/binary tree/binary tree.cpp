@@ -47,8 +47,8 @@ int main(int argc, int *argv[])
 
     QuadTree* qTree = BuildQuadtree();
     qTree->findAllLeafs();
-    //qTree->subDivide(1);
-    //qTree->m_ne->subDivide(1);
+    qTree->subDivide(1);
+    qTree->m_ne->subDivide(1);
     QuadTree* isLeaf();
 
     

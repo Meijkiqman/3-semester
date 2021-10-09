@@ -31,7 +31,7 @@ struct Vector2d
 		QuadTree* findAllLeafs();
 		QuadTree(const Vector2d& v1, const Vector2d& v2, const Vector2d& v3, const Vector2d& v4);
 		void subDivide(int n);
-		std::vector<Vector2d*> data;
+		
 		bool isLeaf() const;
 		QuadTree* find(const Vector2d& p);
 		Vector2d v_sw;
