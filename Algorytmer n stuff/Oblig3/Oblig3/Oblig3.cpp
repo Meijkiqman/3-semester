@@ -2,6 +2,42 @@
 #include <chrono>
 
 
+
+
+struct test
+{
+	int key;
+	std::string s;
+	bool operator == (const test& t2) const { return key == t2.key; }
+};
+
+template<>
+class std::hash<test> 
+{
+	size_t operator() (const test& t) const {
+		return t.key % 7;
+	}
+	bool operator() (const test& t1, const test& t2) {
+		return t1.key == t2.key;
+	}
+};
+
+void hashfunc(int argc, char *argv[])
+{
+	std::hash<int> hashtabell;
+
+	
+	size_t i = hashtabell(1113335557);
+	//unordered_set<test> uordnet_sett;
+}
+
+void test_unordered_set()
+{
+	std::hash<test> ht;
+
+}
+
+
 void Merge(int arr[], int const left, int const mid, int const right)
 {
 	auto const subArray1 = mid - left + 1;
