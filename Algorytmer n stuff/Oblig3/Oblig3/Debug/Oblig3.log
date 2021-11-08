@@ -1,7 +1,23 @@
 ﻿  Oblig3.cpp
-C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\Oblig3\Oblig3\Oblig3.cpp(115,11): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\Oblig3\Oblig3\Oblig3.cpp(64,18): warning C4101: 'hashTabell': unreferenced local variable
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\Oblig3\Oblig3\Oblig3.cpp(170,11): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
           with
           [
               _Rep=__int64
+          ]
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\Oblig3\Oblig3\Oblig3.cpp(208): message : see reference to function template instantiation 'void insertionSort<int,10>(T (&)[10])' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\Oblig3\Oblig3\Oblig3.cpp(139,12): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\Oblig3\Oblig3\Oblig3.cpp(215): message : see reference to function template instantiation 'void MergeSort<int,10>(T (&)[10])' being compiled
+          with
+          [
+              T=int
           ]
   Oblig3.vcxproj -> C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\Oblig3\Debug\Oblig3.exe
