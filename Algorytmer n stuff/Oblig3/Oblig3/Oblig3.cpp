@@ -7,29 +7,121 @@
 #include <unordered_map>
 #include <unordered_set>
 
-/*struct edge;
-struct Node {
+struct Edge;
+
+struct Node
+{
 	char m_name;
 	bool m_visited;
-	std::list<edge> m_edges;
+	std::list<Edge>
+		m_edges;
 	Node(char name) : m_name(name), m_visited(false) { }
-	void edge(const edge& Edge);
+	void setIn_edge(const Edge& edge);
 };
-struct Edge {
+
+struct Path
+{
+public:
+	std::vector<Edge*> edges;
+	double cost;
+	bool operator > (const Path& OtherPath) const { return cost > OtherPath.cost; }
+
+};
+
+struct Edge
+{
 	float m_weight;
 	Node* m_toNode;
-	Edge(float weight, Node* toNode) : m_weight(weight), m_toNode(toNode) { }
-	bool operator > (const Edge& k) const { return m_weight > k.m_weight; }
+	Edge(float weight, Node* toNode) : m_weight(weight), m_toNode(toNode) { };
+	bool operator > (const Edge& e) const { return m_weight > e.m_weight; };
 };
-struct Graf {
+
+struct graph
+{
 	std::list<Node*> nodes;
-	Graf() { }
+	graph() {};
 	Node* find_node(char name);
-	void setin_node(char name);
-	void setin_edge(char from_name, char to_name, float weight);
-	float mst();
+	void setIn_node(char name);
+	void setIn_edge(char from_name, char to_name, float weight);
+	float mst;
 };
-*/
+
+void Node::setIn_edge(const Edge& edge)
+{
+	for (auto& e : m_edges)
+	{
+		if (e.m_toNode = edge.m_toNode)
+		{
+			//returns if edge already exists
+			return;
+		}
+	}
+	m_edges.push_back(edge);
+}
+
+void graph::setIn_node(char name)
+{
+	Node* n = new Node(name);
+		for (auto& node : nodes)
+		{
+			if (node->m_name == name)
+			{
+				return;
+			}
+		}
+		nodes.push_back(n);	
+}
+
+Node* graph::find_node(char name)
+{
+	for (auto& node : nodes)
+	{
+		if (node->m_name == name)
+		{
+			return node;
+		}
+	}
+	return nullptr;
+}
+
+void graph::setIn_edge(char from_name, char to_name, float weight)
+{
+	Node* n = find_node(from_name);
+
+	if (!n)
+	{
+		setIn_node(from_name);
+	}
+	n = find_node(from_name);
+
+	Node* n2 = find_node(to_name);
+
+	if (!n2)
+	{
+		setIn_node(to_name);
+	}
+	n2 = find_node(to_name);
+
+	Edge* e = new Edge(weight, n2);
+	n->setIn_edge(*e);
+}
+
+void graphFunc()
+{
+	graph* g = new graph();
+	g->setIn_node('a');
+	g->setIn_node('b');
+	g->setIn_node('c');
+	g->setIn_node('d');
+	g->setIn_node('e');
+	g->setIn_edge('a', 'b', 1);
+	g->setIn_edge('a', 'c', 2);
+	g->setIn_edge('b', 'c', 2);
+	g->setIn_edge('c', 'd', 3);
+	g->setIn_edge('d', 'e', 1);
+	g->setIn_edge('a', 'e', 5);
+	g->setIn_edge('c', 'e', 4);
+}
 
 //oppg3
 struct test
@@ -237,6 +329,8 @@ int main()
 
 	//PrintArray(arr, n);
 	hashfunc();
+
+	//graphFunc();
 
 	return 0;
 }
