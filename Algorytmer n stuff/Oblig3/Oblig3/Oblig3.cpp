@@ -175,9 +175,12 @@ void hashfunc()
 template<typename T, size_t n>
 void MergeSort(T(&arr)[n])
 {
+	//starts timer for timing
 	 auto start = std::chrono::high_resolution_clock::now();
 
+	 //initializes ints to sort
 	 int i, j, k, lower1, lower2, size, upper1, upper2;
+	 //creates an array where where the ints are put in transition for mergesort
 	 std::array<int, n> hjelp;
 	 size = 1;
 	 while (size < n)
@@ -223,6 +226,7 @@ void MergeSort(T(&arr)[n])
 		 size = size * 2;
 	 }
 
+	 //ends timer
 	 auto end = std::chrono::high_resolution_clock::now();
 	 std::chrono::duration<double> totalTime = end - start;
 	 std::chrono::nanoseconds totalTimeNano = std::chrono::duration_cast<std::chrono::nanoseconds>(totalTime);
