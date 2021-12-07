@@ -1,0 +1,27 @@
+Prep ting for eksamen 
+
+svar fra en kahoot jeg screenshotta
+
+-hva medfører en primærnøkkel?
+
+*Entydig identifiaksjon av rad i en tabell
+
+-hviklen SQL-kommando brukes for å sette inn nye rader i en tabell
+
+*INSERT
+
+-Registreringnumre i en bildedatabase består av 2 bokstaver og 5 siffer. den mest hensiktmessig datatypen er
+
+*CHAR(7)
+-Hvordan kan vi hindre at det blir registrert to like verider i en bestemt kolonne?
+
+*skrive UNIQUE i kolonnedefinsjonen
+
+-hva oppnår man ved å skrive NOT NULL i kollonedefinsjonen?
+
+*kolonnen må allitd fylles ut
+
+-i hvilken SQL-kommando bruker vi UNIQUE?
+
+* CREATE TABLE
+
