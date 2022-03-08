@@ -1,0 +1,22 @@
+﻿  Ads 2018 svar.cpp
+C:\Users\siver\source\repos\Ads 2018 svar\Ads 2018 svar\Ads 2018 svar.cpp(29,11): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\siver\source\repos\Ads 2018 svar\Ads 2018 svar\Ads 2018 svar.cpp(127): message : see reference to function template instantiation 'void insertionSort<int,10>(T (&)[10])' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\siver\source\repos\Ads 2018 svar\Ads 2018 svar\Ads 2018 svar.cpp(96,11): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\siver\source\repos\Ads 2018 svar\Ads 2018 svar\Ads 2018 svar.cpp(134): message : see reference to function template instantiation 'void MergeSort<int,10>(T (&)[10])' being compiled
+          with
+          [
+              T=int
+          ]
+  Ads 2018 svar.vcxproj -> C:\Users\siver\source\repos\Ads 2018 svar\Debug\Ads 2018 svar.exe
