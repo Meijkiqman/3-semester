@@ -1,0 +1,6 @@
+﻿  Sort.cpp
+C:\Users\siver\source\repos\Sort\Sort\Sort.cpp(12,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\siver\source\repos\Sort\Sort\Sort.cpp(13,32): warning C4018: '<': signed/unsigned mismatch
+C:\Users\siver\source\repos\Sort\Sort\Sort.cpp(51,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\siver\source\repos\Sort\Sort\Sort.cpp(58,24): warning C4018: '<': signed/unsigned mismatch
+  Sort.vcxproj -> C:\Users\siver\source\repos\Sort\Debug\Sort.exe

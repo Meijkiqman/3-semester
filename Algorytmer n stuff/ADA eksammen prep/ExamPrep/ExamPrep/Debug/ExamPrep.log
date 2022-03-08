@@ -1,0 +1,28 @@
+﻿  BinaryNode.cpp
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\BinaryNode.cpp(14,6): warning C4102: 'left': unreferenced label
+  CharNode.cpp
+  ExamPrep.cpp
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\ExamPrep.cpp(109,14): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\ExamPrep.cpp(233,21): warning C4101: 'hashtabbel': unreferenced local variable
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\ExamPrep.cpp(584,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\ExamPrep.cpp(218): message : see reference to function template instantiation 'void BubbleSort<int,10>(T (&)[10])' being compiled
+          with
+          [
+              T=int
+          ]
+  Graph.cpp
+  Hash.cpp
+  node.cpp
+  Quadtree.cpp
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\Quadtree.cpp(51,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\Quadtree.cpp(178,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\ExamPrep\Quadtree.cpp(194,20): warning C4018: '<': signed/unsigned mismatch
+  TQueue.cpp
+  TStack.cpp
+  Generating Code...
+  LINK : C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\Debug\ExamPrep.exe not found or not built by the last incremental link; performing full link
+  ExamPrep.vcxproj -> C:\Users\siver\Documents\GitHub\3. Semester\3-semester\Algorytmer n stuff\ADA eksammen prep\ExamPrep\Debug\ExamPrep.exe
