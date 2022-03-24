@@ -1,15 +1,16 @@
 ﻿  Graph.cpp
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(93,25): warning C4305: 'argument': truncation from 'int' to 'char'
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(93,16): warning C4309: 'argument': truncation of constant value
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(94,26): warning C4305: 'argument': truncation from 'int' to 'char'
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(94,22): warning C4309: 'argument': truncation of constant value
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(94,16): warning C4309: 'argument': truncation of constant value
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(95,25): warning C4305: 'argument': truncation from 'int' to 'char'
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(95,16): warning C4309: 'argument': truncation of constant value
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(96,25): warning C4305: 'argument': truncation from 'int' to 'char'
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(96,21): warning C4309: 'argument': truncation of constant value
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(99,25): warning C4305: 'argument': truncation from 'int' to 'char'
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(99,16): warning C4309: 'argument': truncation of constant value
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(100,25): warning C4305: 'argument': truncation from 'int' to 'char'
-C:\Users\siver\source\repos\Graph\Graph\Graph.cpp(100,16): warning C4309: 'argument': truncation of constant value
-  Graph.vcxproj -> C:\Users\siver\source\repos\Graph\x64\Debug\Graph.exe
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(93,25): warning C4305: 'argument': truncation from 'int' to 'char'
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(93,16): warning C4309: 'argument': truncation of constant value
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(94,26): warning C4305: 'argument': truncation from 'int' to 'char'
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(94,22): warning C4309: 'argument': truncation of constant value
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(94,16): warning C4309: 'argument': truncation of constant value
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(95,25): warning C4305: 'argument': truncation from 'int' to 'char'
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(95,16): warning C4309: 'argument': truncation of constant value
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(96,25): warning C4305: 'argument': truncation from 'int' to 'char'
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(96,21): warning C4309: 'argument': truncation of constant value
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(99,25): warning C4305: 'argument': truncation from 'int' to 'char'
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(99,16): warning C4309: 'argument': truncation of constant value
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(100,25): warning C4305: 'argument': truncation from 'int' to 'char'
+C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\Graph\Graph.cpp(100,16): warning C4309: 'argument': truncation of constant value
+  LINK : C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\x64\Debug\Graph.exe not found or not built by the last incremental link; performing full link
+  Graph.vcxproj -> C:\Users\siver\OneDrive\Documents\GitHub\3-semester\Algorytmer n stuff\Graph\x64\Debug\Graph.exe
